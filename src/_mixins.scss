@@ -1,0 +1,61 @@
+@mixin tier($suffix, $min-width: 0) {
+  @if $min-width > 0 {
+    @media (min-width: $min-width) {
+      .#{$class-row} {
+        $scrollbar: 18px; // TODO Scrollbar hack
+        max-width: $min-width - $grid-gutter * 2 - $scrollbar;
+      }
+      @for $column from 1 through $grid-columns {
+        .#{format(format($class-column-responsive, '[TIER]', $suffix), '[SIZE]', $column)} {
+          width: percentage($column / $grid-columns);
+        }
+      }
+    }
+  } @else {
+    @for $column from 1 through $grid-columns {
+      .#{format(format($class-column-responsive, '[TIER]', $suffix), '[SIZE]', $column)} {
+        width: percentage($column / $grid-columns);
+      }
+    }
+  }
+}
+
+@mixin hidden($suffix, $min-width, $max-width: null) {
+  .hidden-#{$suffix} {
+    @if $max-width {
+      @media (min-width: $min-width) and (max-width: $max-width) {
+        display: none;
+      }
+    } @else {
+      @media (min-width: $min-width) {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin button($suffix, $color-background, $color-text: white) {
+  .btn--#{$suffix} {
+    color: $color-text;
+    background-color: $color-background;
+    &:focus {
+      color: $color-text;
+    }
+    &:hover {
+      color: $color-text;
+      background-color: lighten($color-background, 15%);
+    }
+    &:active {
+      color: $color-text;
+      background-color: darken($color-background, 10%);
+    }
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'variables';
+
+// Grid settings:
+
+$grid-columns: 12;
+$grid-gutter: 8px;
+
+// Class names:
+
+$class-row: 'row';
+$class-column-base: 'col';
+$class-column-responsive: '[TIER]-[SIZE]';
+
+// Screen tiers:
+
+$tiers: (
+  xs: 0,
+  sm: $screen-sm-min,
+  md: $screen-md-min,
+  lg: $screen-lg-min
+);
+
+// Buttons:
+
+$buttons: (
+  primary: #1a98ff,
+  success: #76bd42,
+  danger: #e65e57
+);

@@ -1,0 +1,42 @@
+// Format a string:
+
+@function format($string, $search, $replace) {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + format(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+// Generate a comma-separated list:
+
+@function list($prefix, $from, $to) {
+  @if $from == $to {
+    @return '#{$prefix}#{$from}';
+  } @else {
+    @return '#{$prefix}#{$from},' + list($prefix, $from + 1, $to);
+  }
+}
+
+// Sort a map:
+
+@function sort($map, $by-index) {
+  $lt: ();
+  $gt: ();
+  $eq: ();
+  @if length($map) > 1 {
+    $pivot: nth(nth($map, ceil(length($map) / 2)), $by-index);
+    @each $item in $map {
+      $value: nth($item, $by-index);
+      @if $value > $pivot {
+        $gt: append($gt, $item);
+      } @else if $value < $pivot {
+        $lt: append($lt, $item);
+      } @else {
+        $eq: append($eq, $item);
+      }
+    }
+    @return join(join(sort($lt, $by-index), $eq), sort($gt, $by-index));
+  }
+  @return $map;
+}

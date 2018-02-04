@@ -1,0 +1,27 @@
+.align {
+    &-left {
+      text-align: left;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+  
+  .padding {
+    &-none {
+      padding: 0;
+    }
+  }
+  
+  .margin {
+    &-none {
+      margin: 0;
+    }
+  }
+  
+  .clearfix {
+    @include clearfix;
+  }
