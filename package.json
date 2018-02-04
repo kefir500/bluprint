@@ -1,0 +1,38 @@
+{
+  "name": "bluprint.css",
+  "version": "0.1.0",
+  "description": "Customizable minimalistic responsive CSS grid",
+  "keywords": [
+    "css",
+    "grid",
+    "framework",
+    "responsive"
+  ],
+  "homepage": "https://kefir500.github.io/bluprint",
+  "bugs": {
+    "url": "https://github.com/kefir500/bluprint.css/issues",
+    "email": "kefir500@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Alexander Gorishnyak",
+    "email": "kefir500@gmail.com",
+    "url": "https://kefir500.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kefir500/bluprint.css.git"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "normalize.css": "^7.0.0"
+  }
+}
