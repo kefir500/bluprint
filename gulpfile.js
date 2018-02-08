@@ -19,6 +19,8 @@ gulp.task('css', function () {
 
 gulp.task('normalize', function () {
   return gulp.src('node_modules/normalize.css/normalize.css')
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist'));
 });
 
