@@ -1,14 +1,14 @@
 {
   "name": "bluprint.css",
   "version": "0.1.0",
-  "description": "Customizable minimalistic responsive CSS grid",
+  "description": "Lightweight customizable responsive CSS grid",
   "keywords": [
     "css",
     "grid",
     "framework",
     "responsive"
   ],
-  "homepage": "https://kefir500.github.io/bluprint",
+  "homepage": "https://kefir500.github.io/bluprint.css",
   "bugs": {
     "url": "https://github.com/kefir500/bluprint.css/issues",
     "email": "kefir500@gmail.com"
