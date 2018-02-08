@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var cssnano = require('gulp-cssnano');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var stylelint = require('gulp-stylelint');
 
 gulp.task('default', ['build', 'docs', 'watch']);
 gulp.task('build', ['css', 'normalize']);
@@ -32,6 +33,11 @@ gulp.task('docs', function () {
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('docs/css/'));
+});
+
+gulp.task('test', function () {
+  return gulp.src('dist/bluprint.*')
+    .pipe(stylelint({reporters: [{formatter: 'string', console: true}]}));
 });
 
 gulp.task('watch', function () {
