@@ -1,0 +1,5 @@
+*.log
+.gitignore
+bower.json
+bower_components/
+node_modules/
