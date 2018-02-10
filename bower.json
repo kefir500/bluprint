@@ -1,0 +1,29 @@
+{
+  "name": "bluprint.css",
+  "description": "Lightweight customizable responsive CSS grid",
+  "main": "./dist/bluprint.css",
+  "authors": [
+    {
+      "name": "Alexander Gorishnyak",
+      "email": "kefir500@gmail.com",
+      "url": "https://kefir500.github.io"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "grid",
+    "framework",
+    "responsive"
+  ],
+  "homepage": "https://github.com/kefir500/bluprint.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kefir500/bluprint.css.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components/",
+    "node_modules/"
+  ]
+}
