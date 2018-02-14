@@ -275,7 +275,7 @@ body {
 
 .btn--primary {
   color: white;
-  background-color: #1a98ff;
+  background-color: #1a99ff;
 }
 
 .btn--primary:focus {
@@ -284,12 +284,12 @@ body {
 
 .btn--primary:hover {
   color: white;
-  background-color: #67baff;
+  background-color: #67bbff;
 }
 
 .btn--primary:active {
   color: white;
-  background-color: #007fe6;
+  background-color: #0080e6;
 }
 
 .btn--success {
