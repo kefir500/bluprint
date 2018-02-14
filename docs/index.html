@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Responsive CSS Grid &ndash; Bluprint.css</title>
+    <meta name="description" content="Customizable responsive CSS grid">
+    <meta name="author" content="Alexander Gorishnyak">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../dist/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/bluprint.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#1a99ff">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#0086f2">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59660668-2"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-59660668-2');</script>
+
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col xs-12">
+                <div class="navbar">
+                    <div class="navbar__content hidden-xs">
+                        <a class="navbar__item" href="#about">About</a>
+                        <a class="navbar__item" href="#installation">Installation</a>
+                        <a class="navbar__item" href="#grid">Grid</a>
+                        <a class="navbar__item" href="#customization">Customization</a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lead">
+            <div class="lead__title">
+                <div class="logo">
+                    <span class="logo__blu">Blu</span><span class="logo__print">print</span><span class="logo__css">.css</span>
+                </div>
+            </div>
+            <div class="lead__subtitle">
+                <h1>Lightweight Responsive CSS Grid</h1>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col xs-12">
+                <h2 id="about">What is <span class="color-primary">Blu</span>print?</h2>
+                <p>
+                    <span class="color-primary">Blu</span>print is a customizable minimalistic responsive CSS grid packed with multiple useful helper classes and generators.
+                </p>
+                <ul>
+                    <li>Responsive CSS grid <span class="color-muted">(as in Bootstrap or Foundation).</span></li>
+                    <li>Easily customizable <span class="color-muted">grid, tiers and class names.</span></li>
+                    <li>Lightweight <span class="color-muted">(&lt;1KB gzipped).</span></li>
+                    <li>Helper classes <span class="color-muted">for responsive visibility, paddings, resets.</span></li>
+                    <li>Generators <span class="color-muted">to create stylish buttons.</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-12">
+                <h2 id="installation">Installation</h2>
+                <h3>Step 1</h3>
+                <h4>Option A</h4>
+                <p>Install <span class="color-primary">Blu</span>print via NPM, Yarn or Bower:</p>
+                <pre><code>npm i bluprint.css</code></pre>
+                <pre><code>yarn add bluprint.css</code></pre>
+                <pre><code>bower install bluprint.css</code></pre>
+                <h4>Option B</h4>
+                <p>You can also manually download and unzip the package:</p>
+                <p><a href="https://github.com/kefir500/bluprint.css/zipball/master" class="btn btn--primary">Download</a></p>
+                <h3>Step 2</h3>
+                <p>Finally, include the CSS in your page <code>&lt;head&gt;</code> section.</p>
+                <pre><code class="html">&lt;link rel="stylesheet" href="dist/normalize.min.css"&gt;
+&lt;link rel="stylesheet" href="dist/bluprint.min.css"&gt;</code></pre>
+                <p><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> is not mandatory but highly recommended: this library is used to reduce cross-browser rendering inconsistency.</p>
+                <h3>CDN</h3>
+                <p>Alternatively, you can include the CSS via CDN without downloading or installing any local files:</p>
+                <pre><code class="html">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"&gt;
+&lt;link rel="stylesheet" href="https://gitcdn.link/repo/kefir500/bluprint.css/master/dist/bluprint.min.css"&gt;</code></pre>
+            </div>
+        </div>
+        <div class="row" id="grid">
+            <div class="col xs-12"><h2>Grid</h2></div>
+            <div class="col xs-12">
+                <div class="row">
+                    <div class="col xs-12 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-6 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-6 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-4 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-4 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-4 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-3 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-3 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-3 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-3 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-2 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                    <div class="col xs-1 hidden-xs bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
+                </div>
+            </div>
+            <div class="col xs-12">
+                <h3 id="tiers">Rows</h3>
+                <p>
+                    The conception of grid is pretty straightforward: it consists of containers called rows (<code>.row</code>).<br>Rows, in turn, are wrappers for <a href="#fixed-columns">columns</a> (<code>.col</code>).
+                </p>
+                <h3 id="tiers">Tiers</h3>
+                <p>
+                    Tiers are based on screen size ranges and used for <a href="#responsive-columns">responsive column</a> stacking.
+                </p>
+                <p>
+                    The default grid layout consists of 12 columns. Your block can take any amount of these columns
+                    from 1 to 12 accordingly. For responsive layouts different number of columns can be taken for the specific screen size:
+                </p>
+                <ul>
+                    <li><code>.xs-*</code> takes <code>*</code> columns on any screen.</li>
+                    <li><code>.sm-*</code> takes <code>*</code> columns on screens <i>&ge;768px</i> wide.</li>
+                    <li><code>.md-*</code> takes <code>*</code> columns on screens <i>&ge;992px</i> wide.</li>
+                    <li><code>.lg-*</code> takes <code>*</code> columns on screens <i>&ge;1200px</i> wide.</li>
+                    <li><code>*</code> is a number of columns to occupy from <i>1</i> to <i>12</i>.</li>
+                </ul>
+                <p>The screen size classes are applied (and being overridden) from smaller to bigger ones.</p>
+                <p>These tiers as well as the grid layout can be easily <a href="#customization">customized</a> according to your needs.</p>
+                <hr>
+                <h3 id="fixed-columns">Fixed Columns</h3>
+                <p>The following blocks take the fixed amount of columns on different screen sizes.</p>
+                <h4>HTML</h4>
+                <pre><code class="html">&lt;div class="row"&gt;
+    &lt;div class="col xs-12"&gt;&lt;/div&gt;
+    &lt;div class="col xs-6"&gt;&lt;/div&gt;
+    &lt;div class="col xs-6"&gt;&lt;/div&gt;
+    &lt;div class="col xs-4"&gt;&lt;/div&gt;
+    &lt;div class="col xs-4"&gt;&lt;/div&gt;
+    &lt;div class="col xs-4"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <h4>Demo</h4>
+            </div>
+            <div class="col xs-12 bluebox"><div class="bluebox__content">12</div></div>
+            <div class="col xs-6 bluebox"><div class="bluebox__content">6</div></div>
+            <div class="col xs-6 bluebox"><div class="bluebox__content">6</div></div>
+            <div class="col xs-4 bluebox"><div class="bluebox__content">4</div></div>
+            <div class="col xs-4 bluebox"><div class="bluebox__content">4</div></div>
+            <div class="col xs-4 bluebox"><div class="bluebox__content">4</div></div>
+            <div class="col xs-12">
+                <hr>
+                <h3 id="responsive-columns">Responsive Columns</h3>
+                <p>The following example demonstrates the responsive layout where each block takes the specified number of columns on different screens:
+                <ul>
+                    <li>12 columns <span class="color-muted">(of 12)</span> on <code>xs</code> (extra small) screens.</li>
+                    <li>6 columns <span class="color-muted">(of 12)</span> on <code>sm</code> (small) screens.</li>
+                    <li>4 columns <span class="color-muted">(of 12)</span> on <code>md</code> (medium) screens <span class="color-muted">(except for the first column).</span></li>
+                    <li>3 columns <span class="color-muted">(of 12)</span> on <code>lg</code> (large) screens.</li>
+                </ul>
+                <p>Columns stack depending on the current screen size. Try resizing your browser window.</p>
+                <h4>HTML</h4>
+                <pre><code class="html">&lt;div class="row"&gt;
+    &lt;div class="col xs-12 sm-6 md-12 lg-3"&gt;&lt;/div&gt;
+    &lt;div class="col xs-12 sm-6 md-4 lg-3"&gt;&lt;/div&gt;
+    &lt;div class="col xs-12 sm-6 md-4 lg-3"&gt;&lt;/div&gt;
+    &lt;div class="col xs-12 sm-6 md-4 lg-3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <h4>Demo</h4>
+            </div>
+            <div class="col xs-12 sm-6 md-12 lg-3 bluebox">
+                <div class="bluebox__content align-left">
+                    <div class="tier tier--default">.col</div>
+                    <div class="tier tier--xs">.xs-12</div>
+                    <div class="tier tier--sm">.sm-6</div>
+                    <div class="tier tier--md">.md-12</div>
+                    <div class="tier tier--lg">.lg-3</div>
+                </div>
+            </div>
+            <div class="col xs-12 sm-6 md-4 lg-3 bluebox">
+                <div class="bluebox__content align-left">
+                    <div class="tier tier--default">.col</div>
+                    <div class="tier tier--xs">.xs-12</div>
+                    <div class="tier tier--sm">.sm-6</div>
+                    <div class="tier tier--md">.md-4</div>
+                    <div class="tier tier--lg">.lg-3</div>
+                </div>
+            </div>
+            <div class="col xs-12 sm-6 md-4 lg-3 bluebox">
+                <div class="bluebox__content align-left">
+                    <div class="tier tier--default">.col</div>
+                    <div class="tier tier--xs">.xs-12</div>
+                    <div class="tier tier--sm">.sm-6</div>
+                    <div class="tier tier--md">.md-4</div>
+                    <div class="tier tier--lg">.lg-3</div>
+                </div>
+            </div>
+            <div class="col xs-12 sm-6 md-4 lg-3 bluebox">
+                <div class="bluebox__content align-left">
+                    <div class="tier tier--default">.col</div>
+                    <div class="tier tier--xs">.xs-12</div>
+                    <div class="tier tier--sm">.sm-6</div>
+                    <div class="tier tier--md">.md-4</div>
+                    <div class="tier tier--lg">.lg-3</div>
+                </div>
+            </div>
+            <div class="col xs-12">
+                <hr>
+                <h3>Nested Columns</h3>
+                <p>Columns can be nested in multiple levels. Wrap each level in a <code>.row</code> class in order to zero out the inner padding.</p>
+                <h4>HTML</h4>
+                <pre><code class="html">&lt;div class="row"&gt;
+    &lt;div class="col xs-12 sm-6"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col xs-12"&gt;&lt;/div&gt;
+            &lt;div class="col xs-6"&gt;&lt;/div&gt;
+            &lt;div class="col xs-6"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col xs-12 sm-6"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col xs-4"&gt;&lt;/div&gt;
+            &lt;div class="col xs-4"&gt;&lt;/div&gt;
+            &lt;div class="col xs-4"&gt;&lt;/div&gt;
+            &lt;div class="col xs-3"&gt;&lt;/div&gt;
+            &lt;div class="col xs-3"&gt;&lt;/div&gt;
+            &lt;div class="col xs-3"&gt;&lt;/div&gt;
+            &lt;div class="col xs-3"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <h4>Demo</h4>
+            </div>
+            <div class="col xs-12 sm-6">
+                <div class="bluebox bluebox--nested">
+                    <div class="col xs-12"><div class="bluebox__content">6</div></div>
+                    <div class="col xs-12 bluebox__inner"><div class="bluebox__content">12</div></div>
+                    <div class="col xs-6 bluebox__inner"><div class="bluebox__content">6</div></div>
+                    <div class="col xs-6 bluebox__inner"><div class="bluebox__content">6</div></div>
+                </div>
+            </div>
+            <div class="col xs-12 sm-6">
+                <div class="bluebox bluebox--nested">
+                    <div class="col xs-12"><div class="bluebox__content">6</div></div>
+                    <div class="col xs-4 bluebox__inner"><div class="bluebox__content">4</div></div>
+                    <div class="col xs-4 bluebox__inner"><div class="bluebox__content">4</div></div>
+                    <div class="col xs-4 bluebox__inner"><div class="bluebox__content">4</div></div>
+                    <div class="col xs-3 bluebox__inner"><div class="bluebox__content">3</div></div>
+                    <div class="col xs-3 bluebox__inner"><div class="bluebox__content">3</div></div>
+                    <div class="col xs-3 bluebox__inner"><div class="bluebox__content">3</div></div>
+                    <div class="col xs-3 bluebox__inner"><div class="bluebox__content">3</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-12">
+                <h2 id="customization">Customization</h2>
+                <p>
+                    In order to customize the grid tiers / columns number, size / generate button classes,
+                    run <code>npm install</code> in the root directory to install the required dependencies.
+                    Then you can simply edit the <code>scss/_config.scss</code> file and build your CSS file with <code>gulp&nbsp;build</code> command.
+                    For better understanding of the following variables read the <a href="#tiers">Tiers</a> section.
+                </p>
+                <h3>Variables</h3>
+                <div class="table">
+                    <table class="variables">
+                        <tr>
+                            <th>Variable</th>
+                            <th>Description</th>
+                            <th>Default</th>
+                        </tr>
+                        <tr>
+                            <td class="nobr"><code>$grid-columns</code></td>
+                            <td>Number of columns in a layout row.</td>
+                            <td class="nobr"><code>12</code></td>
+                        </tr>
+                        <tr>
+                            <td class="nobr"><code>$grid-gutter</code></td>
+                            <td>Half-width of a gap between columns.</td>
+                            <td class="nobr"><code>8px</code></td>
+                        </tr>
+                        <tr>
+                            <td class="nobr"><code>$class-row</code></td>
+                            <td>Base class name for a row container.</td>
+                            <td class="nobr"><code>row</code></td>
+                        </tr>
+                        <tr>
+                            <td class="nobr"><code>$class-column-base</code></td>
+                            <td>Base class name for columns.</td>
+                            <td class="nobr"><code>col</code></td>
+                        </tr>
+                        <tr>
+                            <td class="nobr"><code>$class-column-responsive</code></td>
+                            <td>
+                                Class name pattern for responsive columns.
+                                <ul>
+                                    <li class="nobr"><code>[TIER]</code> is replaced with a screen size tier.</li>
+                                    <li class="nobr"><code>[SIZE]</code> is replaced with a column size.</li>
+                                </ul>
+                            </td>
+                            <td class="nobr"><code>[TIER]-[SIZE]</code></td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Tiers</h3>
+                <p>
+                    The <code>$tiers</code> map contains tiers which respresent the screen size breakpoints for stacking responsive columns.
+                    The corresponding classes are generated based on this variable.
+                </p>
+                <pre><code class="scss">$tiers: (
+  xs: 0,
+  sm: 768,
+  md: 992,
+  lg: 1200
+);</code></pre>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Screen size</th>
+                        </tr>
+                        <tr>
+                            <td><code>xs</code></td>
+                            <td>&ge; 0</td>
+                        </tr>
+                        <tr>
+                            <td><code>sm</code></td>
+                            <td>&ge; 768</td>
+                        </tr>
+                        <tr>
+                            <td><code>md</code></td>
+                            <td>&ge; 992</td>
+                        </tr>
+                        <tr>
+                            <td><code>lg</code></td>
+                            <td>&ge; 1200</td>
+                        </tr>
+                    </table>
+                </div>
+                <h4>Example</h4>
+                <p>You can create any number of screen size tiers with your own names and breakpoints according to your needs, for example:</p>
+                <pre><code class="scss">$tiers: (
+  mobile: 0,
+  tablet: 700,
+  laptop: 1200,
+  desktop: 1600
+);</code></pre>
+                <h3>Buttons</h3>
+                <p>You can also generate stylish flat buttons with automatically calculated hover and click effects.</p>
+                <h4>SCSS</h4>
+                <pre><code class="scss">$buttons: (
+  primary: #1a98ff,
+  success: #76bd42,
+  danger: #e65e57
+);</code></pre>
+                <h4>HTML</h4>
+                <pre><code class="html">&lt;a class="btn btn--primary"&gt;Primary&lt;/a&gt;
+&lt;a class="btn btn--success"&gt;Success&lt;/a&gt;
+&lt;a class="btn btn--danger"&gt;Danger&lt;/a&gt;</code></pre>
+                <p>
+                    <a class="btn btn--primary">Primary</a>
+                    <a class="btn btn--success">Success</a>
+                    <a class="btn btn--danger">Danger</a>
+                </p>
+                <p>
+                    If you don't need any buttons, simply remove this variable.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col xs-12">
+                <hr>
+                Alexander Gorishnyak, 2018<br>
+                Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>
+            </div>
+        </div>
+    </div>
+    <a href="https://github.com/kefir500/bluprint.css" target="_blank"><img class="fork" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

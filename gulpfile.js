@@ -27,7 +27,7 @@ gulp.task('normalize', function () {
 
 gulp.task('docs', function () {
   return gulp.src('docs/scss/demo.scss')
-    .pipe(sass({precision: 8, outputStyle: 'expanded'}))
+    .pipe(sass())
     .pipe(autoprefixer({browsers: ['> 2%', 'last 2 versions', 'ie >= 8']}))
     .pipe(gulp.dest('docs/css/'))
     .pipe(cssnano())
