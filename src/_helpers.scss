@@ -21,6 +21,10 @@
       margin: 0;
     }
   }
+
+  .nobr {
+    white-space: nowrap;
+  }
   
   .clearfix {
     @include clearfix;

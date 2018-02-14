@@ -251,6 +251,10 @@ body {
   margin: 0;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 .clearfix:after {
   clear: both;
   content: '';
