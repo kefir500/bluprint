@@ -16,10 +16,10 @@
     "framework",
     "responsive"
   ],
-  "homepage": "https://github.com/kefir500/bluprint.css",
+  "homepage": "https://github.com/kefir500/bluprint/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kefir500/bluprint.css.git"
+    "url": "git://github.com/kefir500/bluprint.git"
   },
   "ignore": [
     "**/.*",

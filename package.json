@@ -8,9 +8,9 @@
     "framework",
     "responsive"
   ],
-  "homepage": "https://kefir500.github.io/bluprint.css",
+  "homepage": "https://kefir500.github.io/bluprint",
   "bugs": {
-    "url": "https://github.com/kefir500/bluprint.css/issues",
+    "url": "https://github.com/kefir500/bluprint/issues",
     "email": "kefir500@gmail.com"
   },
   "license": "MIT",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kefir500/bluprint.css.git"
+    "url": "https://github.com/kefir500/bluprint.git"
   },
   "scripts": {
     "start": "gulp",
