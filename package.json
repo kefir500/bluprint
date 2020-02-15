@@ -8,7 +8,7 @@
     "framework",
     "responsive"
   ],
-  "homepage": "https://kefir500.github.io/bluprint",
+  "homepage": "https://qwertycube.com/bluprint/",
   "bugs": {
     "url": "https://github.com/kefir500/bluprint/issues",
     "email": "kefir500@gmail.com"
@@ -17,7 +17,7 @@
   "author": {
     "name": "Alexander Gorishnyak",
     "email": "kefir500@gmail.com",
-    "url": "https://kefir500.github.io"
+    "url": "https://qwertycube.com"
   },
   "repository": {
     "type": "git",

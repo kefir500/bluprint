@@ -82,7 +82,7 @@ The following blocks take the fixed amount of columns on different screen sizes.
 </div>
 ```
 
-[Demo](https://kefir500.github.io/bluprint/#fixed-columns)
+[Demo](https://qwertycube.com/bluprint/#fixed-columns)
 
 #### Responsive Columns
 
@@ -104,7 +104,7 @@ Columns stack depending on the current screen size.
 </div>
 ```
 
-[Demo](https://kefir500.github.io/bluprint/#responsive-columns)
+[Demo](https://qwertycube.com/bluprint/#responsive-columns)
 
 #### Nested Columns
 
@@ -133,7 +133,7 @@ Columns can be nested in multiple levels. Wrap each level in a .row class in ord
 </div>
 ```
 
-[Demo](https://kefir500.github.io/bluprint/#nested-columns)
+[Demo](https://qwertycube.com/bluprint/#nested-columns)
 
 ### Customization
 
@@ -203,6 +203,6 @@ $buttons: (
 <a class="btn btn--danger">Danger</a>
 ```
 
-[Demo](https://kefir500.github.io/bluprint/#buttons)
+[Demo](https://qwertycube.com/bluprint/#buttons)
 
 If you don't need any buttons, simply remove this variable.
