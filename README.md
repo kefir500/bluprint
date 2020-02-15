@@ -14,13 +14,11 @@
 
 #### Option A
 
-Install Bluprint via NPM, Yarn or Bower:
+Install Bluprint via NPM or Yarn:
 
 `npm i bluprint.css`
 
 `yarn add bluprint.css`
-
-`bower install bluprint.css`
 
 #### Option B
 
