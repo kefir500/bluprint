@@ -20,20 +20,18 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59660668-2"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-59660668-2');</script>
-
-    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="row">
             <div class="col xs-12">
                 <div class="navbar">
-                    <div class="navbar__content hidden-xs">
+                    <nav class="navbar__content hidden-xs">
                         <a class="navbar__item" href="#about">About</a>
                         <a class="navbar__item" href="#installation">Installation</a>
                         <a class="navbar__item" href="#grid">Grid</a>
                         <a class="navbar__item" href="#customization">Customization</a>                        
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -47,9 +45,9 @@
                 <h1>Lightweight Responsive CSS Grid</h1>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <div class="row">
+    </header>
+    <main class="content">
+        <section class="row">
             <div class="col xs-12">
                 <h2 id="about">What is <span class="color-primary">Blu</span>print?</h2>
                 <p>
@@ -63,8 +61,8 @@
                     <li>Generators <span class="color-muted">to create stylish buttons.</span></li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
+        </section>
+        <section class="row">
             <div class="col xs-12">
                 <h2 id="installation">Installation</h2>
                 <h3>Step 1</h3>
@@ -85,10 +83,10 @@
                 <pre><code class="html">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"&gt;
 &lt;link rel="stylesheet" href="https://gitcdn.link/repo/kefir500/bluprint/master/dist/bluprint.min.css"&gt;</code></pre>
             </div>
-        </div>
-        <div class="row" id="grid">
-            <div class="col xs-12"><h2>Grid</h2></div>
+        </section>
+        <section class="row" id="grid">
             <div class="col xs-12">
+                <h2>Grid</h2>
                 <div class="row">
                     <div class="col xs-12 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
                     <div class="col xs-6 bluebox bluebox--waterfall"><div class="bluebox__content"></div></div>
@@ -121,7 +119,7 @@
                 </div>
             </div>
             <div class="col xs-12">
-                <h3 id="tiers">Rows</h3>
+                <h3 id="rows">Rows</h3>
                 <p>
                     The conception of grid is pretty straightforward: it consists of containers called rows (<code>.row</code>).<br>Rows, in turn, are wrappers for <a href="#fixed-columns">columns</a> (<code>.col</code>).
                 </p>
@@ -165,7 +163,7 @@
             <div class="col xs-12">
                 <hr>
                 <h3 id="responsive-columns">Responsive Columns</h3>
-                <p>The following example demonstrates the responsive layout where each block takes the specified number of columns on different screens:
+                <p>The following example demonstrates the responsive layout where each block takes the specified number of columns on different screens:</p>
                 <ul>
                     <li>12 columns <span class="color-muted">(of 12)</span> on <code>xs</code> (extra small) screens.</li>
                     <li>6 columns <span class="color-muted">(of 12)</span> on <code>sm</code> (small) screens.</li>
@@ -265,8 +263,8 @@
                     <div class="col xs-3 bluebox__inner"><div class="bluebox__content">3</div></div>
                 </div>
             </div>
-        </div>
-        <div class="row">
+        </section>
+        <section class="row">
             <div class="col xs-12">
                 <h2 id="customization">Customization</h2>
                 <p>
@@ -380,9 +378,9 @@
                     If you don't need any buttons, simply remove this variable.
                 </p>
             </div>
-        </div>
-    </div>
-    <div class="footer">
+        </section>
+    </main>
+    <footer class="footer">
         <div class="row">
             <div class="col xs-12">
                 <hr>
